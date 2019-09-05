@@ -2,6 +2,9 @@
 
 app_path=$(dirname $(find . | grep mix.exs))
 
+echo "Build Path $1"
+echo "App Path $app_path"
+
 mix_file_url="$1/$app_path/mix.exs"
 
 if [ -f $mix_file_url ];
