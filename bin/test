@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-cd "$1" && mix test
+app_path=$(dirname $(find . | grep mix.exs))
+
+cd "$1/$app_path" && mix test
