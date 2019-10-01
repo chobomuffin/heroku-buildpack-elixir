@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-app_path=$(dirname $(find . | grep mix.exs))
+app_path=helloelixir
 
 cd "$1/$app_path" && mix test

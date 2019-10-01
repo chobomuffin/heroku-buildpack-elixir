@@ -11,7 +11,7 @@ build_pack_path=$(cd $(dirname $(dirname $0)); pwd)
 # Ensure dirs are present
 mkdir -p $1 $2 $3
 
-app_path=$(dirname $(find . | grep mix.exs))
+app_path=helloelixir
 
 build_path=$(cd $1 && pwd)/$app_path
 cache_path=$(cd $2 && pwd)

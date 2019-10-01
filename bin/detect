@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-app_path=$(dirname $(find . | grep mix.exs))
+app_path=helloelixir
 
 echo "Build Path $1"
 echo "App Path $app_path"
